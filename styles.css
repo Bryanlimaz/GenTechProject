@@ -48,3 +48,53 @@ body {
     height: 89%; /* Quando deletar a borda, arredondar para 90% */
     border: solid 2px purple; /* Ao se comentar esta linha a bordar some */
 }
+
+.nav-bar{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-bar .titulo{
+    display: block;
+    justify-content: center;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.nav-bar .topodir1{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar .topodir1 img{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+.topodir1 .nome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.topodir1 .nome p{
+    position: absolute;
+    top: 44px;
+}
+
+
+
+
+
