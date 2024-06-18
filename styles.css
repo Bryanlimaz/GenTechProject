@@ -30,12 +30,159 @@ body {
 
 .center {
     display: flex;
+    flex-direction: column;
     position:absolute;
     bottom: 0%;
     left: 15%;
     width: 64.5%; /* Quando deletar a borda, arredondar para 65% */
     height: 89%; /* Quando deletar a borda, arredondar para 90% */
     border: solid 2px blue; /* Ao se comentar esta linha a bordar some*/
+}
+
+.date {
+    
+}
+
+.center-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.center-cards {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 80%;
+    padding: 2%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.center-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.card-left-top {
+    width: 100%;
+    height: 33%;
+    color: white;
+}
+
+p {
+    margin: 0%;
+}
+
+.card-left-middle-container {
+    width: 100%;
+    height: 33%;
+}
+
+.card-left-submiddle1 {
+    color: white;
+    width: 100%;
+    height: 50%;
+}
+
+.p2 {
+    font-size: 12px;
+}
+
+.card-left-submiddle2 {
+    color: white;
+    width: 100%;
+    height: 50%;
+}
+
+.p3 {
+    font-weight: bolder;
+}
+
+.card-left-bottom {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 33%;
+}
+
+.p4 {
+    font-size: 10px;
+}
+
+.center-card-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 50%;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 75%, pink 0);    
+}
+
+.progress-bar::before {
+    content: "75%";
+}
+
+h1 {
+    margin: 0%;
+    font-size: medium;
+}
+
+.center-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+table {
+    width: 95%;
+    height: 95%;
+    background-color: pink;
+    border-radius: 5%;
+    opacity: 100%;
+    margin: 0%;
+}
+
+tr:hover {
+    background-color: coral;
+    opacity: 50%;
+}
+
+th, td {
+    border-bottom: 1px solid #000;
+}
+
+
+th {
+    text-align: center;
+    font-size: 14px;
+    opacity: 100%;
+}
+
+td {
+    text-align: center;
+    font-size: 12px;
+    opacity: 100%;
 }
 
 .right-menu {
