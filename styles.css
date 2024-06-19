@@ -415,6 +415,11 @@ color: white;
 cursor: pointer;
 border-radius: 5px
 }
-
+@media screen and(max-width: 768px){
+    .nav-bar{
+        width: 100%;
+        flex-direction: column;
+    }
+}
 
 
