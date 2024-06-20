@@ -27,6 +27,7 @@ body {
     width: 15%;
     height: 100%;
     border: solid 2px red; /* Ao se comentar esta linha a bordar some*/
+    display: none;
 }
 
 .center {
@@ -339,6 +340,7 @@ td {
     width: 20%;
     height: 89%; /* Quando deletar a borda, arredondar para 90% */
     border: solid 2px purple; /* Ao se comentar esta linha a bordar some */
+    display: none;
 }
 
 @media  (max-width: 865px) {
@@ -387,7 +389,7 @@ td {
     gap: 10px;
     align-items: center;
     justify-content: center;
-
+    padding-left: 10%;
 }
 
 .nav-bar .topodir1 img{
@@ -395,6 +397,7 @@ td {
     height: 50px;
     width: 50px;
     cursor: pointer;
+    
 }
 .topodir1 .nome{
     display: flex;
