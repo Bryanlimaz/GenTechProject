@@ -25,33 +25,23 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-* {
-    margin: 0; /* Ao se comentar esta linha a bordar some*/
-    padding: 0;
-    outline: 0;
-    appearance: none;
-    border: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-brackground);
+    user-select: none;
+    overflow-x: hidden;
 }
 
-html{
-        font-size: 14px;
-    }
+.menu-esquerda-resp {
+    display: none;
+}
 
-body {
-        width: 100vw;
-        height: 100vh;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.88rem;
-        background: var(--color-brackground);
-        user-select: none;
-        overflow-x: hidden;
-    }
-
-a {
-    color: var(--color-dark);
+div.left-menu a {
+    text-decoration: none;
+    height: 5%;
 }
 
 img {
@@ -92,8 +82,7 @@ aside .sidebar{
     background: white;
     display: flex;
     flex-direction: column;
-    height:100%;
-    gap: 20px;
+ 
 }
 
 aside h3{
@@ -114,8 +103,8 @@ aside .sidebar a span{
 aside .sidebar a:last-child {
     position: absolute;
     bottom: 2rem;
-    width: 100%;
 }
+
 a.active {
     margin: 0%;
 }
@@ -154,7 +143,7 @@ aside .sidebar a:hover span {
     position: absolute;
     width: 97vw;
     height: 98vh;
-    border: solid 2px black; /* Ao se comentar esta linha a bordar some*/
+    /* border: solid 2px black; Ao se comentar esta linha a bordar some */
 }
 
 .nav-bar {
@@ -162,15 +151,17 @@ aside .sidebar a:hover span {
     position: relative;
     width: 85%;
     height: 10%;
-    border: solid 2px green; /* Ao se comentar esta linha a bordar some*/
+    /* border: solid 2px green; Ao se comentar esta linha a bordar some */
 }
 
 .left-menu {
+    font-size: 14px;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     width: 15%;
     height: 100%;
-    border: solid 2px red; /* Ao se comentar esta linha a bordar some*/
+    /* border: solid 2px red; Ao se comentar esta linha a bordar some */
 }
 
 
@@ -183,7 +174,7 @@ aside .sidebar a:hover span {
     left: 15%;
     width: 64.5%; /* Quando deletar a borda, arredondar para 65% */
     height: 89%; /* Quando deletar a borda, arredondar para 90% */
-    border: solid 2px blue; /* Ao se comentar esta linha a bordar some*/
+    /* border: solid 2px blue; Ao se comentar esta linha a bordar some */
 }
 
 .center-main-box {
@@ -485,17 +476,22 @@ td {
     right: 0%;
     width: 20%;
     height: 89%; /* Quando deletar a borda, arredondar para 90% */
-    border: solid 2px purple; /* Ao se comentar esta linha a bordar some */
-    background-color: black;
+    /* border: solid 2px purple; Ao se comentar esta linha a bordar some */
+    /* background-color: black; */
     color: white;
 }
 
 .card1 {
     border-radius: 10px;
-    background-color: rgba(92, 92, 92, 0.616);
+    color: black;
     margin-right: 10px;
     margin-left: 10px;
     padding: 5%;
+    background-color: white;
+    opacity: 70%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .card2 {
@@ -514,7 +510,12 @@ td {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background-color: rgba(92, 92, 92, 0.616);
+    color: black;
+    background-color: white;
+    opacity: 70%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 .right-menu .card1 .user {
     display: flex;
@@ -547,6 +548,7 @@ td {
 
 
 .title {
+    color: black;
     font-size: medium;
     font-family: sans-serif;
     width:100%;
@@ -576,7 +578,7 @@ img {
     margin-right:10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    
+    cursor: pointer;
 }
 @media  (max-width: 865px) {
    .left-menu {
