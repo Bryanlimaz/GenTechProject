@@ -26,13 +26,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     font-family: "Poppins", sans-serif;
-    font-size: 0.88rem;
-    background: var(--color-brackground);
-    user-select: none;
-    overflow-x: hidden;
 }
 
 .menu-esquerda-resp {
@@ -552,8 +546,9 @@ td {
     font-size: medium;
     font-family: sans-serif;
     width:100%;
-    height: 10%;
-    padding: 15px;
+    height: 5%;
+    padding-top: 6%;
+    margin-bottom: 5%;
     display: flex;
     align-items: center;
 
@@ -561,7 +556,7 @@ td {
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 40px;
     height: 40px;
 }
@@ -580,29 +575,8 @@ img {
     margin-bottom: 8px;
     cursor: pointer;
 }
-@media  (max-width: 865px) {
-   .left-menu {
-    display: none;
-   }
 
-   .right-menu {
-    display: none;
-   }
-
-   .nav-bar {
-    width: 100%;
-   }
-
-   .center {
-    width: 100%;
-    left: 0%;
-   }
-
-   .p2 {
-    font-size: 10px;
-   }
-}
-.nav-bar{
+.nav-bar {
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -612,7 +586,7 @@ img {
     padding-right: 15px;
 }
 
-.nav-bar .titulo{
+.nav-bar .titulo {
     display: block;
     justify-content: center;
     font-weight: bold;
@@ -636,6 +610,7 @@ img {
     cursor: pointer;
     
 }
+
 .topodir1 .nome{
     display: flex;
     flex-direction: column;
@@ -649,6 +624,7 @@ img {
     position: absolute;
     top: 44px;
 }
+
 .nav-bar .topodir1 span:hover{
 background-color: blueviolet;
 color: white;
@@ -656,9 +632,31 @@ cursor: pointer;
 border-radius: 5px
 }
 
-@media screen and(max-width: 768px){
-    .nav-bar{
-        width: 100%;
-        flex-direction: column;
+@media  (max-width: 865px) {
+    .left-menu {
+     display: none;
     }
-}
+ 
+    .right-menu {
+     display: none;
+    }
+
+    .menu-esquerda-resp {
+        display: block;
+        width: 5%;
+        height: 5%;
+    }
+ 
+    .nav-bar {
+     width: 100%;
+    }
+ 
+    .center {
+     width: 100%;
+     left: 0%;
+    }
+ 
+    .p2 {
+     font-size: 10px;
+    }
+ }
