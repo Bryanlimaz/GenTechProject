@@ -34,6 +34,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
 
 html{
         font-size: 14px;
@@ -652,11 +653,10 @@ color: white;
 cursor: pointer;
 border-radius: 5px
 }
+
 @media screen and(max-width: 768px){
     .nav-bar{
         width: 100%;
         flex-direction: column;
     }
 }
-
-
