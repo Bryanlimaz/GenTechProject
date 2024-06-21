@@ -33,18 +33,11 @@ body {
     display: none;
 }
 
-div.left-menu a {
-    text-decoration: none;
-    height: 5%;
-}
+
 
 img {
     display: block;
     width: 100%;
-}
-
-aside {
-    height: 100vh;
 }
 
 aside .top {
@@ -52,14 +45,13 @@ aside .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1.4rem;
+    margin-top: 3%;
     width: 100%;
 }
 
 aside .logo {
     display: flex;
     width: 100%;
-    padding-left: 15px;
 }
 
 aside .logo img {
@@ -71,41 +63,38 @@ aside .close{
     display: none;
 }
 
-aside .sidebar{
-    padding-top: 30px;
-    background: white;
+.sidebar{
     display: flex;
     flex-direction: column;
- 
+    width: 100%;
+    height: 90%;
+    margin-top: 11%;
+    gap: 3%;
+    background: white;
 }
 
-aside h3{
-    font-weight: 500;
-}
-
-aside .sidebar a {
+.sidebar-containers {
     display: flex;
-    color: var(--color-info-dark);
-    gap: 1rem;
-    transition: all 300ms ease;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
 }
 
-aside .sidebar a span{
-    font-size: 1.6rem;
-}
-
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-}
-
-a.active {
-    margin: 0%;
+.sidebar-containers-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4%;
+    width: 100%;
+    height: 5%;
+    margin-top: 30%;
 }
 
 aside .sidebar a.active {
-    background: var(--color-light);
-    color: var(--color-primary);
+    /* background: var(--color-light);
+    color: var(--color-primary); */
     margin-left: 0px;
 }
 
@@ -142,10 +131,55 @@ aside .sidebar a:hover span {
 
 .nav-bar {
     display: flex;
-    position: relative;
+    justify-content: space-between;
     width: 85%;
     height: 10%;
+    font-size: 10px;
+    padding-right: 15px;
+    background-color: rgb(255, 255, 255);
     /* border: solid 2px green; Ao se comentar esta linha a bordar some */
+}
+
+.nav-bar .titulo {
+    position: relative;
+    left: 4%;
+}
+
+.nav-bar .topodir1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 50%;
+    min-width: 10%;
+}
+
+.nav-bar .topodir1 img{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+
+.topodir1 .nome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.topodir1 .nome p{
+    position: absolute;
+    top: 44px;
+}
+
+.nav-bar .topodir1 span:hover{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px
 }
 
 .left-menu {
@@ -156,6 +190,21 @@ aside .sidebar a:hover span {
     width: 15%;
     height: 100%;
     /* border: solid 2px red; Ao se comentar esta linha a bordar some */
+}
+
+aside {
+    height: 100%;
+}
+
+.left-menu a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    text-decoration: none;
+    transition: all 300ms ease;
+    color: var(--color-info-dark);
 }
 
 
@@ -175,7 +224,7 @@ aside .sidebar a:hover span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%; /* Quando deletar a borda, arredondar para 65% */
+    width: 90%; /* Quando deletar a borda, arredondar para 65% */
     height: 100%; /* Quando deletar a borda, arredondar para 90% */
 }
 
@@ -190,9 +239,8 @@ aside .sidebar a:hover span {
 
 .date {
     display: flex;
-    width: 93%;
+    width: 100%;
     padding-top: 1%;
-    /* padding-left: 0%; */
     margin-bottom: 1%;
 }
 
@@ -211,16 +259,17 @@ input#date {
 
 .center-card-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     min-width: 100%;
-    height: 70%;
+    height: 100%;
+    gap: 14%;
 }
 
 .center-cards {
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 20%;
     height: 75%;
     padding: 2%;
     background-color: white;
@@ -245,11 +294,25 @@ input#date {
     margin-bottom: 5%;
 }
 
+.sidebar-containers .material-symbols-outlined {
+    height: 80%;
+}
+
+.sidebar-containers h3 {
+    margin: 0%;
+    height: 80%;
+    font-weight: 500;
+}
+
+.center-cards .material-symbols-outlined {
+    font-size: 15px;
+}
+
 .icon-background1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 25%;
     height: 100%;
     color: white;
     background-color: #7182E9;
@@ -260,7 +323,7 @@ input#date {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 25%;
     height: 100%;
     color: white;
     background-color: #F77A86;
@@ -271,7 +334,7 @@ input#date {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 25%;
     height: 100%;
     color: white;
     background-color: #4DE8B3;
@@ -294,7 +357,11 @@ p {
 }
 
 .p2 {
-    font-size: 12px;
+    font-size: 10px;
+}
+
+.p2-2 {
+    font-size: 8px;
 }
 
 .card-left-submiddle2 {
@@ -304,6 +371,7 @@ p {
 }
 
 .p3 {
+    font-size: 10px;
     font-weight: bolder;
 }
 
@@ -316,22 +384,22 @@ p {
 }
 
 .p4 {
-    font-size: 10px;
+    font-size: 7px;
 }
 
 .center-card-right {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 65%;
 }
 
 .progress-bar1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     background: 
@@ -347,7 +415,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     background: 
@@ -363,7 +431,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     background: 
@@ -377,7 +445,7 @@ p {
 
 .title-orders {
     display: flex;
-    width: 93%;
+    width: 100%;
     padding-top: 1%;
 }
 
@@ -397,8 +465,8 @@ p {
 }
 
 table {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     background-color: white;
     border-radius: 5%;
     opacity: 70%;
@@ -479,7 +547,7 @@ td {
     border-radius: 10px;
     color: black;
     margin-right: 10px;
-    margin-left: 10px;
+    height: 40%;
     padding: 5%;
     background-color: white;
     opacity: 70%;
@@ -511,10 +579,9 @@ td {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
-.right-menu .card1 .user {
+.card1 .user {
     display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+    height: 33%;
 }
 
 .right-menu .card1 .user .txt {
@@ -557,8 +624,8 @@ td {
 
 img {
     border-radius: 10%;
-    width: 40px;
-    height: 40px;
+    width: 50%;
+    height: 50%;
 }
 
 .buttom {
@@ -576,61 +643,7 @@ img {
     cursor: pointer;
 }
 
-.nav-bar {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.nav-bar .titulo {
-    display: block;
-    justify-content: center;
-    font-weight: bold;
-    font-weight: 700;
-}
-
-.nav-bar .topodir1{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10%;
-}
-
-.nav-bar .topodir1 img{
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    
-}
-
-.topodir1 .nome{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0;
-    height: 100%;
-}
-
-.topodir1 .nome p{
-    position: absolute;
-    top: 44px;
-}
-
-.nav-bar .topodir1 span:hover{
-background-color: blueviolet;
-color: white;
-cursor: pointer;
-border-radius: 5px
-}
 
 @media  (max-width: 865px) {
     .left-menu {
@@ -643,12 +656,16 @@ border-radius: 5px
 
     .menu-esquerda-resp {
         display: block;
-        width: 5%;
+        position: absolute;
+        left: 10%;
+        top: 2.8%;
+        width: 3%;
         height: 5%;
+        z-index: 1;
     }
  
     .nav-bar {
-     width: 100%;
+        width: 79%;
     }
  
     .center {
